@@ -1,13 +1,13 @@
 package com.bridgelab.employee;
 
 public class EmployeeWage {
-        int IS_FULL_TIME=2;
-        int TOTAL_EMPLOYEE_WAGE=0;
-        int FULL_DAY_HOUR=0;
-        int IS_PART_TIME=1;
+   public static final int IS_FULL_TIME=2;
+    public static  int TOTAL_EMPLOYEE_WAGE=0;
+    public static  int FULL_DAY_HOUR=0;
+    public static final int IS_PART_TIME=1;
     public static void main(String[] args) {
         System.out.println("Welcome to the Employee Wage Computation");
-        int daily_Employee_Wage=20; 
+        int daily_Employee_Wage=20;
         int total_Working_Days=20;
         int total_Working_Hour=100;
        // int TOTAL_WORKING_DAYS=20
@@ -22,9 +22,9 @@ public class EmployeeWage {
 //            System.out.println("Employee is absent");
 //            FULL_DAY_HOUR=0;
 //        }
-
+        if (total_Working_Days>=20 || total_Working_Hour >=100) {
         for (int i = 1; i<=total_Working_Days;i++){
-            if (total_Working_Days>=20 || total_Working_Hour >=100) {
+
                 switch (empCheck) {
                     case 1:
                         IS_PART_TIME:
